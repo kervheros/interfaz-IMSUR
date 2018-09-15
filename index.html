@@ -109,18 +109,91 @@ else
 </head>
 <body>
 
-<div id="fb-root"></div>
+<!--<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1';
   fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>-->
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1&appId=1234724609994306&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
   
 
 
-		    
+
+<div class="demo_changer">
+			<div class="demo-icon"><i class="fa fa-cog fa-spin fa-2x"></i></div>
+                <div class="form_holder">
+                    <h4>CHOOSE YOUR STYLE</h4>
+                    
+                    <div class="predefined_styles">                    
+					<form>
+						<select id="headers" class="show-menu-arrow selectpicker"  onChange="document.location = this.value" value="GO">
+                       	    <option value="">Change Header</option>
+                            <option value="header1.html">Header Style 1</option>
+                            <option value="header2.html">Header Style 2</option>
+                            <option value="header3.html">Header Style 3</option>
+						</select>         
+						<select id="footers" class="show-menu-arrow selectpicker"  onChange="document.location = this.value" value="GO">
+                       	    <option value="">Change Footer</option>                            <option value="footer1.html#footer-style-1">Footer Style 1</option>
+                            <option value="footer2.html#footer-style-2">Footer Style 2</option>
+                            <option value="footer3.html#footer-style-3">Footer Style 3</option>
+						</select>     
+						<select id="layouts" class="show-menu-arrow selectpicker"  onChange="document.location = this.value" value="GO">
+                       	    <option value="">Select Layout</option>
+                            <option value="fullwidth_layout.html">Fullwidth Layout</option>
+                            <option value="boxed_layout.html">Boxed Layout</option>
+						</select>                   
+					</form>
+                    <hr>
+                    <h4>LIGHT OR DARK</h4>
+                        <a href="#" rel="light" class="styleswitch"><img class="img-thumbnail" src="switcher/images/light.png" alt=""></a>	
+                        <a href="#" rel="dark" class="styleswitch"><img class="img-thumbnail" src="switcher/images/dark.png" alt=""></a>	
+                    <hr> 
+                    <h4>PATTERNS</h4>
+					<div class="PatternChanger">
+						<a href="switcher/images/patterns/bg_01.jpg" class="bg_t"><img src="switcher/images/patterns/bg_01.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_02.jpg" class="bg_t"><img src="switcher/images/patterns/bg_02.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_03.jpg" class="bg_t"><img src="switcher/images/patterns/bg_03.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_04.jpg" class="bg_t"><img src="switcher/images/patterns/bg_04.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_05.jpg" class="bg_t"><img src="switcher/images/patterns/bg_05.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_06.jpg" class="bg_t"><img src="switcher/images/patterns/bg_06.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_07.jpg" class="bg_t"><img src="switcher/images/patterns/bg_07.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_08.jpg" class="bg_t"><img src="switcher/images/patterns/bg_08.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_09.jpg" class="bg_t"><img src="switcher/images/patterns/bg_09.jpg" alt=""></a>
+						<a href="switcher/images/patterns/bg_10.jpg" class="bg_t"><img src="switcher/images/patterns/bg_10.jpg" alt=""></a>
+					</div>	
+					<hr>
+                    <h4>PREDEFINED SKINS</h4>
+                        <a href="#" rel="green" class="styleswitch"><img src="switcher/images/green.png" alt=""></a>	
+                        <a href="#" rel="tael" class="styleswitch"><img src="switcher/images/tael.png" alt=""></a>	
+                        <a href="#" rel="light-green" class="styleswitch"><img src="switcher/images/light-green.png" alt=""></a>	
+                        <a href="#" rel="yellow" class="styleswitch"><img src="switcher/images/yellow.png" alt=""></a>	
+                        <a href="#" rel="blue" class="styleswitch"><img src="switcher/images/blue.png" alt=""></a>	
+                        <a href="#" rel="light-blue" class="styleswitch"><img src="switcher/images/light-blue.png" alt=""></a>	
+                        <a href="#" rel="purple" class="styleswitch"><img src="switcher/images/purple.png" alt=""></a>	
+                        <a href="#" rel="violet" class="styleswitch"><img src="switcher/images/violet.png" alt=""></a>	
+                        <a href="#" rel="red" class="styleswitch"><img src="switcher/images/red.png" alt=""></a>	
+                        <a href="#" rel="orange" class="styleswitch"><img src="switcher/images/orange.png" alt=""></a>	
+                    </div>
+                    <hr>
+                    <p>This tools is just for demo site.</p>
+                </div>
+            </div>
+
+
+
+  
 
 
 
@@ -546,9 +619,11 @@ else
 <!--<div id="contenedor_peque">-->
 	
 			<div class="grey-wrapper jt-shadow padding-top">
-
-	
-				<div id="izquierda"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FEmpresaMineraIMSUR%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>	
+				
+				
+				<div id="izquierda"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpruebaspagina.prueba%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1234724609994306" width="340" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>
+				
+				<!--<div id="izquierda"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FEmpresaMineraIMSUR%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>-->
  
 				<div id="derecha" class="make-center wow fadeInUp" align="center">
 					<img align="center" src="demos/banner.png" alt="" class="img-responsive">
@@ -582,7 +657,7 @@ else
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front">
-                                    	<i <!--class="fa fa-print fa-4x"-->><input type=image src="images/analisi.png" width="100" height="100"></i>
+                                    	<i <!--class="fa fa-print fa-4x"-->><input type=image src="images/mineral.png" width="100" height="100"></i>
                                         <h3>Evaluacion</h3>
                                     </div>
 									<div class="ch-info-back">
@@ -600,7 +675,7 @@ else
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front">
-                                    	<i <!--class="fa fa-lightbulb-o fa-4x"-->><input type=image src="images/broza.png" width="100" height="100"></i>
+                                    	<i <!--class="fa fa-lightbulb-o fa-4x"-->><input type=image src="images/broza1.png" width="100" height="100"></i>
                                         <h3>Compra</h3>
                                     </div>
 									<div class="ch-info-back">
@@ -619,7 +694,7 @@ else
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front">
-                                    	<i <!--class="fa fa-bar-chart-o fa-4x"-->><input type=image src="images/procesado.png" width="100" height="100"></i>
+                                    	<i <!--class="fa fa-bar-chart-o fa-4x"-->><input type=image src="images/concentrado.png" width="100" height="100"></i>
                                         <h3>Procesado de Mineral</h3>
                                     </div>
 									<div class="ch-info-back">
@@ -637,12 +712,12 @@ else
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front">
-                                    	<i <!--class="fa fa-html5 fa-4x"-->><input type=image src="images/exportacion.png" width="100" height="100"></i>
-                                        <h3>Exportacion</h3>
+                                    	<i <!--class="fa fa-html5 fa-4x"-->><input type=image src="images/venta.png" width="100" height="100"></i>
+                                        <h3>Comercializacion</h3>
                                     </div>
 									<div class="ch-info-back">
-                                        <h3>EXPORTACION DE CONCENTRADO </h3>
-                                        <p>Ya obtenido el concentrado del mineral este se encuentra listo para ser exportado .</p>
+                                        <h3>VENTA DE CONCENTRADO </h3>
+                                        <p>Ya obtenido el concentrado del mineral este se encuentra listo para ser comercializado.</p>
                                     </div>
 								</div><!-- end ch-info -->
 							</div><!-- end ch-info-wrap -->
@@ -666,15 +741,15 @@ else
         	<div class="container">
 				<div class="testimonial-widget">
 					<div id="owl-testimonial" class="owl-carousel">
-						<div class="testimonial">
+						<!--<div class="testimonial">  comentarios desplazables
 							<p class="lead"></p>
 							<h3></h3>
 						</div><!-- end tweet -->
-						<div class="testimonial">
+						<!--<div class="testimonial">
 							<p class="lead"></p>
 							<h3></h3>
 						</div><!-- end tweet -->
-						<div class="testimonial">
+						<!--<div class="testimonial">
 							<p class="lead"></p>
 							<h3></h3>
 						</div>
@@ -737,7 +812,7 @@ else
                     </div><!-- end title -->
                     <ul class="newsletter_widget">
                         <p>Nos ubicamos en la Villa Imperial de Carlos V, ciudad de Potosi </p>
-						<p>Nuestra direccion es en la Av. Circumvalacion S/N Zona Santa Rosa, ruta nacional 1 carretera</p>
+						<p>Nuestra direccion es en la Av. Circumvalacion S/N Zona Santa Rosa, ruta nacional 1</p>
 						<p>Telefonos : +591-2-6227793</p>
 						<p></p>
                     </ul><!-- recent posts -->  
