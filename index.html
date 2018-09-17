@@ -9,7 +9,7 @@ function comprobar(esto)
 {
 var es_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 if(es_chrome){
-			    alert("El navegador que se está utilizando es Chrome");
+			    alert("Sera abierto un nuevo enlace");
 				//location.href="https://api.whatsapp.com/send?phone=59170455869&text=Hola%20deseo%20informacion"     habre en el mismo enlace
 				window.open('https://api.whatsapp.com/send?phone=59165490807&text=Hola%20deseo%20informacion', '_blank');			//habre en una nueva pestaña
 				
@@ -18,7 +18,7 @@ if(es_chrome){
 }
 else
 {
-			    alert("El navegador que se está utilizando es Firefox");
+			    alert("Sera abierto un nuevo enlace");
 				window.open('https://web.whatsapp.com/send?phone=59165490807&text=Hola%20deseo%20informacion', '_blank');
 				//location.href="https://web.whatsapp.com/send?phone=59170455869&text=Hola%20deseo%20informacion"
 				
