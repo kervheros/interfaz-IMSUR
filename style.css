@@ -217,7 +217,8 @@
 		min-height:inherit;
 		z-index: 999;
 		background:#ffffff;
-		background: rgba(255,255,255,1);
+		background:#313131;
+		/*background: rgba(255,255,255,1);*/
 		border-bottom: 1px solid #efefef;
 	}	
 	#header-style-1.affix .navbar {
@@ -227,7 +228,7 @@
 		margin-top:12px !important;
 	}
 	#header-style-1.affix .navbar-brand img {
-		width:80%;
+		width:4%;
 		margin-top:7px
 	}
 	#header-style-1.affix .navbar-brand {
@@ -279,6 +280,7 @@
 		border-bottom:1px solid #f2f2f2;
 	}
 	#header-style-1 .navbar-default {
+		/*background-color:#313131;*/
 		background-color:#ffffff;
 		background: rgba(255, 255, 255, 1);
 		border-color: rgba(0, 0, 0, 0);
