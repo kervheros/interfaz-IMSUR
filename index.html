@@ -31,16 +31,44 @@ else
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script>
 	$(document).ready(function(e) {
-		$('#menu111').on('click', function(){
+		$('#central').on('click', function(){
 			
-			$('#content').attr('src', 'pag-ref/pag-rrhh.html');
+			$('#contenido').attr('src', 'central.html');
 		});
-		$('#menu222').on('click', function(){
-			$('#content').attr('src', 'pag-ref/pag-rrhh.html');
+		$('#general').on('click', function(){
+			$('#contenido').attr('src', 'pag-ref/g-general.html');
 			
 		});
-		$('#menu3').on('click', function(){		
-			$('#content').attr('src', 'http://bing.com');
+		$('#operativa').on('click', function(){
+			$('#contenido').attr('src', 'pag-ref/g-operativa.html');
+			
+		});
+		$('#admin').on('click', function(){
+			$('#contenido').attr('src', 'pag-ref/administracion.html');
+			
+		});
+		$('#tesoreria').on('click', function(){
+			$('#contenido').attr('src', 'pag-ref/tesoreria.html');
+			
+		});
+		$('#almacen').on('click', function(){
+			$('#contenido').attr('src', 'pag-ref/almacenes.html');
+			
+		});
+		$('#caja').on('click', function(){		
+			$('#contenido').attr('src', 'pag-ref/caja.html');
+			
+		});
+		$('#conta').on('click', function(){		
+			$('#contenido').attr('src', 'pag-ref/contabilidad.html');
+			
+		});
+		$('#comercio').on('click', function(){		
+			$('#contenido').attr('src', 'pag-ref/comercio.html');
+			
+		});
+		$('#planta').on('click', function(){		
+			$('#contenido').attr('src', 'pag-ref/planta.html');
 			
 		});
 		
@@ -51,22 +79,14 @@ else
   
   <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
 
-  <title>Empresa Minera IMSUR secc. Rosicler</title>
+  <title>Empresa Minera IMSUR</title>
 	<link rel="icon" href="images/logo.png">
 	
 	
 	<style>
 	
 	
-	#content {
-		clear: both;
-		background: #e5e5e5;
-		padding: 0;
-		overflow-y: scroll;
-		width: 100%;
-		height: 476px;
-		border: 0;
-	}
+	
 	
 	
 	
@@ -149,14 +169,6 @@ else
 </head>
 <body>
 
-<!--<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>-->
 <div id="main">
 
 <div id="fb-root"></div>
@@ -272,7 +284,7 @@ else
 
                 </div><!-- end top menu -->
             	<div class="callus">
-                	<span class="topbar-email"><i class="fa fa-envelope"></i> <a href="404.html">info@imsur.com.bo</a></span>
+                	<span class="topbar-email"><i class="fa fa-envelope"></i> <a href="404.html">imsur@imsur.com.bo</a></span>
                     <span class="topbar-phone"><i class="fa fa-phone"></i> +591-2-6227793</span>
                 </div><!-- end callus -->
             </div><!-- end columns -->
@@ -302,7 +314,7 @@ else
                 
 				<div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
 					<ul class="nav navbar-nav">
-						<li class="dropdown yamm-fw"><a href="#inicio" >Home <div ></div></a>
+						<li class="dropdown yamm-fw"><a id="central" href="404.html" >Home <div ></div></a>
 							
 
 
@@ -312,9 +324,38 @@ else
 					
 					<!-- end drop down menu -->
 						</li><!-- end drop down -->
-                        <li><a href="#nosotros">Acerca de nosotros</a></li>
+                        <li><a href="404.html">Acerca de nosotros</a></li>
 
-
+						<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Recursos Humanos <div class="arrow-up"></div></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu">
+                                    <a href="#">Gerencia</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="general" href="404.html">General</a></li>
+                                        <li><a id="operativa" href="404.html">Operativa</a></li>
+                                    </ul><!-- end dropdown-menu -->	
+                                </li>
+								<li><a id="admin" href="404.html">Administracion</a></li>
+								<li class="dropdown-submenu">
+                                    <a href="#">Tesoreria</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a id="tesoreria" href="404.html">Tesoreria</a></li>
+                                        <li><a id="caja" href="404.html">Caja</a></li>
+                                    </ul><!-- end dropdown-menu -->	
+                                </li>
+								<li><a href="404.html">Sistemas</a></li>
+								<li><a id="conta" href="404.html">Contabilidad</a></li>
+								<li><a id="comercio" href="404.html">Comercializacion</a></li>
+								
+								<li><a id="almacen" href="404.html">Almacenes</a></li>
+								<li><a id="planta" href="404.html">Planta</a></li>
+								<li><a id="minas" href="404.html">Minas</a></li>
+								<li><a href="404.html">Medio Ambiente y Seguridad Industrial</a></li>
+								<li><a href="404.html">RR.HH</a></li>
+								<li><a href="404.html">Secretaria</a></li>
+                                <!-- end dropdown-submenu -->
+							</ul>
+						</li>
 
 						<li class="dropdown yamm-fw"><a href="404.html" data-toggle="dropdown" class="dropdown-toggle">Servicios<div class="arrow-up"></div></a>
 							<ul class="dropdown-menu">
@@ -344,20 +385,7 @@ else
                             </ul><!-- end drop down menu -->
 						</li><!-- end drop down -->
                         <!-- standard drop down -->
-                        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Recursos Humanos <div class="arrow-up"></div></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="404.html">Masonry Style</a></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#">Classic Style</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a id="menu111" href="#">1 Column</a></li>
-                                        <li><a id="menu222" href="#">2 Columns</a></li>
-                                        <li><a href="404.html">3 Columns</a></li>
-                                        <li><a href="404.html">4 Columns</a></li>
-                                    </ul><!-- end dropdown-menu -->	
-                                </li><!-- end dropdown-submenu -->
-			    </ul>
-			</li>
+                        
                                 
 
                         
@@ -372,7 +400,7 @@ else
 
                         <!-- standard drop down -->
 
-                        <li><a href="#fin">Contactanos</a></li>
+                        <li><a href="404.html">Contactanos</a></li>
 					</ul><!-- end navbar-nav -->
 				</div><!-- #navbar-collapse-1 -->
 			</div><!-- end navbar yamm navbar-default -->, 
@@ -385,12 +413,8 @@ else
 	
   <!-- slider-wrapper -->
 	
-	
-	
-	
-	  
-    
-	<iframe frameborder=0 marginwidth=0 marginheight=0 border=0 style=”border:0;margin:0;width:100%;height:467px;” src="central.html" scrolling=”no” allowtransparency=”true”></iframe> 
+	   
+	<iframe id="contenido" frameborder=0 marginwidth=0 marginheight=0 border=0 style=”border:0;margin:0;width:100%;height:467px;” src="central.html" scrolling=”no” allowtransparency=”true”></iframe> 
 
     
   <!-- Main Scripts-->
